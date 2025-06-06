@@ -1,4 +1,6 @@
-import React, { useState, useRef, useEffect, MouseEvent } from 'react';
+'use client';
+
+import { useState, useRef, useEffect, MouseEvent } from 'react';
 import { Plane, Car, Bus, Info, MapPin, Download, ZoomIn, ZoomOut, Grab, Hand } from 'lucide-react';
 
 // Define the type for a spot OUTSIDE the component function

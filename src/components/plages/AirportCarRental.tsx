@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { 
-  Car, 
-  MapPin, 
-  Clock, 
-  ShieldCheck, 
-  Plane, 
-  Bus, 
-  CreditCard, 
-  PhoneCall, 
-  Star, 
-  ArrowRight, 
+'use client';
+
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import {
+  Car,
+  MapPin,
+  Clock,
+  ShieldCheck,
+  Plane,
+  Bus,
+  CreditCard,
+  PhoneCall,
+  Star,
+  ArrowRight,
   Check,
   HelpCircle,
   AlertTriangle,
@@ -26,7 +31,7 @@ const AirportCarRental = () => {
     {
       id: 1,
       name: "Hertz",
-      logo: "/src/assets/images/logos/hertz.png",
+      logo: "/images/logos/hertz.png",
       location: "Terminal 3, Niveau -1, Zone Est",
       hours: "24h/24, 7j/7",
       vehicles: ["Économique", "Compact", "SUV", "Premium"],
@@ -36,7 +41,7 @@ const AirportCarRental = () => {
     {
       id: 2,
       name: "Avis",
-      logo: "/src/assets/images/logos/avis.png",
+      logo: "/images/logos/avis.png",
       location: "Terminal 3, Niveau -1, Zone Ouest",
       hours: "06:00 - 23:00, 7j/7",
       vehicles: ["Économique", "Intermédiaire", "Familiale", "Premium"],
@@ -46,7 +51,7 @@ const AirportCarRental = () => {
     {
       id: 3,
       name: "Budget",
-      logo: "/src/assets/images/logos/budget.png",
+      logo: "/images/logos/budget.png",
       location: "Terminal 3, Niveau -1, Zone Centrale",
       hours: "07:00 - 23:00, 7j/7",
       vehicles: ["Économique", "Compact", "Berline", "SUV"],
@@ -60,7 +65,7 @@ const AirportCarRental = () => {
     {
       id: 4,
       name: "Sixt",
-      logo: "/src/assets/images/logos/sixt.png",
+      logo: "/images/logos/sixt.png",
       counterLocation: "Terminal 3, Hall des Arrivées, Desk 21",
       shuttleFrequency: "Toutes les 15 minutes",
       shuttleDuration: "7 minutes",
@@ -72,7 +77,7 @@ const AirportCarRental = () => {
     {
       id: 5,
       name: "Europcar",
-      logo: "/src/assets/images/logos/europcar.png",
+      logo: "/images/logos/europcar.png",
       counterLocation: "Terminal 3, Hall des Arrivées, Desk 18",
       shuttleFrequency: "Toutes les 20 minutes",
       shuttleDuration: "10 minutes",
@@ -84,7 +89,7 @@ const AirportCarRental = () => {
     {
       id: 6,
       name: "Thrifty",
-      logo: "/src/assets/images/logos/thrifty.png",
+      logo: "/images/logos/thrifty.png",
       counterLocation: "Terminal 3, Hall des Arrivées, Desk 15",
       shuttleFrequency: "Toutes les 30 minutes",
       shuttleDuration: "12 minutes",
@@ -146,7 +151,7 @@ const AirportCarRental = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section avec image de fond */}
-      <div className="relative h-[50vh] bg-cover bg-center" style={{ backgroundImage: 'url(/src/assets/images/hero/airport-car-rental.jpg)' }}>
+      <div className="relative h-[50vh] bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069")' }}>
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/40"></div>
         <div className="relative h-full flex flex-col justify-center items-start container mx-auto px-4 md:px-8">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 max-w-2xl">
@@ -156,10 +161,10 @@ const AirportCarRental = () => {
           <p className="text-lg md:text-xl text-white max-w-2xl mb-6">
             Trouvez facilement votre <strong>location de voiture à Tel Aviv</strong> avec notre guide détaillé des loueurs à l'aéroport
           </p>
-          <a href="https://elynortours.com/location-de-voiture/" className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-colors shadow-lg flex items-center">
-            Réserver au meilleur prix 
+          <Link href="https://elynortours.com/location-de-voiture/" className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-colors shadow-lg flex items-center">
+            Réserver au meilleur prix
             <ArrowRight className="ml-2" size={18} />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -200,13 +205,13 @@ const AirportCarRental = () => {
                   </div>
                 </div>
                 <div className="md:w-1/3 flex justify-center">
-                  <a 
-                    href="https://elynortours.com/location-de-voiture/" 
+                  <Link
+                    href="https://elynortours.com/location-de-voiture/"
                     className="px-4 py-3 bg-white text-orange-500 font-bold rounded-lg hover:bg-gray-100 transition-colors inline-flex items-center"
                   >
                     Voir nos offres
                     <ArrowRight className="ml-2" size={18} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -296,7 +301,13 @@ const AirportCarRental = () => {
                     <div key={renter.id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
                       {/* En-tête */}
                       <div className="h-20 bg-white p-4 flex items-center justify-center border-b border-gray-100">
-                        <img src={renter.logo} alt={`Logo ${renter.name}`} className="h-12 max-w-[180px] object-contain" />
+                        <Image
+                          src={renter.logo}
+                          alt={`Logo ${renter.name}`}
+                          width={180}
+                          height={48}
+                          className="h-12 max-w-[180px] object-contain"
+                        />
                       </div>
                       
                       {/* Contenu */}
@@ -344,12 +355,12 @@ const AirportCarRental = () => {
                           </div>
                         </div>
                         
-                        <a 
+                        <Link
                           href={`https://elynortours.com/location-de-voiture/?company=${renter.name.toLowerCase()}`}
                           className="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center py-2 rounded-md transition-colors text-sm font-medium"
                         >
                           Voir les tarifs avec Elynor Tours
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -375,7 +386,13 @@ const AirportCarRental = () => {
                     <div key={renter.id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
                       {/* En-tête */}
                       <div className="h-20 bg-white p-4 flex items-center justify-center border-b border-gray-100">
-                        <img src={renter.logo} alt={`Logo ${renter.name}`} className="h-12 max-w-[180px] object-contain" />
+                        <Image
+                          src={renter.logo}
+                          alt={`Logo ${renter.name}`}
+                          width={180}
+                          height={48}
+                          className="h-12 max-w-[180px] object-contain"
+                        />
                       </div>
                       
                       {/* Contenu */}
@@ -430,12 +447,12 @@ const AirportCarRental = () => {
                           </div>
                         </div>
                         
-                        <a 
+                        <Link
                           href={`https://elynortours.com/location-de-voiture/?company=${renter.name.toLowerCase()}`}
                           className="block w-full bg-rose-500 hover:bg-rose-600 text-white text-center py-2 rounded-md transition-colors text-sm font-medium"
                         >
                           Voir les tarifs avec Elynor Tours
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -511,12 +528,12 @@ const AirportCarRental = () => {
                           </div>
                         </td>
                         <td className="px-4 py-4 whitespace-nowrap">
-                          <a 
+                          <Link
                             href={`https://elynortours.com/location-de-voiture/?company=${renter.name.toLowerCase()}`}
                             className={`inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded-md text-white ${isShuttle ? 'bg-rose-500 hover:bg-rose-600' : 'bg-orange-500 hover:bg-orange-600'} transition-colors`}
                           >
                             Comparer
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     );
@@ -568,13 +585,13 @@ const AirportCarRental = () => {
                     nous vous recommandons fortement de <strong>réserver votre voiture plusieurs semaines avant votre voyage</strong>.
                   </p>
                   <div className="mt-4">
-                    <a
+                    <Link
                       href="https://elynortours.com/location-de-voiture/"
                       className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 transition-colors"
                     >
                       Réserver maintenant
                       <ArrowRight className="ml-2" size={16} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -616,13 +633,13 @@ const AirportCarRental = () => {
               <p className="text-gray-700 mb-4">
                 Si vous avez d'autres questions sur la <strong>location de voiture à Tel Aviv aéroport</strong> ou besoin d'assistance pour votre réservation, notre équipe est là pour vous aider.
               </p>
-<a 
+<Link
                 href="https://elynortours.com/contact/"
                 className="inline-flex items-center px-4 py-2 border border-orange-500 text-orange-500 bg-transparent hover:bg-orange-50 text-sm font-medium rounded-md transition-colors"
               >
                 <PhoneCall size={18} className="mr-2" />
                 Nous contacter
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -654,12 +671,12 @@ const AirportCarRental = () => {
               </div>
             </div>
             
-            <a 
+            <Link
               href="https://elynortours.com/location-de-voiture/"
               className="inline-block px-8 py-4 bg-white text-orange-500 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-lg"
             >
               Voir les offres exclusives d'Elynor Tours
-            </a>
+            </Link>
           </div>
         </div>
       </section>
