@@ -1,13 +1,13 @@
-'use client'
+import React from 'react';
 
-export default function AirportCarRentalLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function AirportCarRentalLayout({ children }: LayoutProps) {
   return (
     <div>
       {children}
     </div>
-  )
+  );
 }

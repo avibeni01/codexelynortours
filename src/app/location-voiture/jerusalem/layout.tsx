@@ -1,3 +1,11 @@
-export default function Layout({ children }: { children: any }) {
-  return <>{children}</>
+export default function JerusalemLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <div>
+      {children}
+    </div>
+  )
 }
