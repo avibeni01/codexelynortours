@@ -48,8 +48,16 @@ export default function Header() {
         <div className="flex h-16 justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-orange-600">Elynor Tours</span>
-              {/* Remplace par ton logo quand tu l'auras */}
+              <Image
+                src="/images/NEW-LOGO2.webp"
+                alt="Elynor Tours Logo"
+                width={300}
+                height={120}
+                className="h-14 w-auto object-contain"
+                priority
+                quality={100}
+                unoptimized
+              />
             </Link>
           </div>
 

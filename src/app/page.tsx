@@ -276,8 +276,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Super !!! J'ai fait appel à leurs services pour louer une voiture lors de ma 
-                dernière visite en Israël. Ce fut simple et agréable."
+                "Super !!! J’ai fait appel a leur services pour louer une voiture lors de ma dernière visite en Israël. Ce fut simple et agréable. Bien que je sois tendu pour des raisons personnelles, l’équipe a su prendre le temps et me mettre dans les meilleures conditions pour que mon séjour se passe au mieux. Merci vraiment !!!"
               </p>
             </div>
             
@@ -300,6 +299,13 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+           <div className="text-center mt-8">
+            <a href="https://www.google.com/search?kgmid=/g/11gh7kzvkk&hl=fr-IL&q=Elynor+tours+-+Location+de+voitures+et+Hotels+en+Israel+%26+dans+le+monde&kgs=7c7ff0d255d45364&shndl=17&source=sh/x/kp/osrp/m5/1" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors">
+              Lire nos autres avis
+            </a>
+          </div>
+
         </div>
       </section>
 

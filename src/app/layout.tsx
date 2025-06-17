@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/HeaderOptimized'
 import Footer from '@/components/layout/Footer'
 import { organizationSchema } from '@/lib/constants/structured-data'
 import './globals.css'

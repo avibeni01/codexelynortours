@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import { Search, Filter, Star, MapPin, Wifi, Car, Coffee, Dumbbell, Waves, Users, Calendar, ArrowRight, Check, X, ChevronDown, ChevronUp, Heart, Share2, Phone, Mail, Shield, Award, Sparkles } from 'lucide-react';
 
