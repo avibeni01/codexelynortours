@@ -13,7 +13,7 @@ const DeadSeaIntroduction: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               La Mer Morte : Une Merveille Naturelle Unique
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-rose-500 mx-auto rounded-full"></div>
           </div>
 
           {/* Contenu principal en 2 colonnes */}
@@ -53,10 +53,10 @@ const DeadSeaIntroduction: React.FC = () => {
             {/* Statistiques et données clés */}
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 p-6 rounded-xl border border-teal-100">
-                  <Droplets className="text-teal-500 mb-3" size={32} />
-                  <div className="text-2xl font-bold text-teal-700 mb-1">34%</div>
-                  <div className="text-teal-600 text-sm">Taux de salinité</div>
+                <div className="bg-gradient-to-br from-orange-50 to-rose-50 p-6 rounded-xl border border-orange-100">
+                  <Droplets className="text-orange-500 mb-3" size={32} />
+                  <div className="text-2xl font-bold text-orange-700 mb-1">34%</div>
+                  <div className="text-orange-600 text-sm">Taux de salinité</div>
                 </div>
                 
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100">
@@ -83,31 +83,31 @@ const DeadSeaIntroduction: React.FC = () => {
           {/* Propriétés thérapeutiques */}
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <div className="text-center mb-8">
-              <Sparkles className="text-teal-500 mx-auto mb-4" size={40} />
+              <Sparkles className="text-orange-500 mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Propriétés Thérapeutiques Reconnues</h3>
               <p className="text-gray-600">Des bienfaits scientifiquement prouvés depuis des millénaires</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center group hover:bg-teal-50 p-4 rounded-lg transition-colors">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-teal-200 transition-colors">
-                  <Heart className="text-teal-600" size={24} />
+              <div className="text-center group hover:bg-orange-50 p-4 rounded-lg transition-colors">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-orange-200 transition-colors">
+                  <Heart className="text-orange-600" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Peau</h4>
                 <p className="text-gray-600 text-sm">Traitement naturel du psoriasis, eczéma et acné</p>
               </div>
 
-              <div className="text-center group hover:bg-blue-50 p-4 rounded-lg transition-colors">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-200 transition-colors">
-                  <Droplets className="text-blue-600" size={24} />
+              <div className="text-center group hover:bg-rose-50 p-4 rounded-lg transition-colors">
+                <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-rose-200 transition-colors">
+                  <Droplets className="text-rose-600" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Articulations</h4>
                 <p className="text-gray-600 text-sm">Soulagement des douleurs et inflammations</p>
               </div>
 
-              <div className="text-center group hover:bg-emerald-50 p-4 rounded-lg transition-colors">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-emerald-200 transition-colors">
-                  <Sparkles className="text-emerald-600" size={24} />
+              <div className="text-center group hover:bg-pink-50 p-4 rounded-lg transition-colors">
+                <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-pink-200 transition-colors">
+                  <Sparkles className="text-pink-600" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Détox</h4>
                 <p className="text-gray-600 text-sm">Élimination des toxines et purification</p>
@@ -124,11 +124,11 @@ const DeadSeaIntroduction: React.FC = () => {
           </div>
 
           {/* Meilleure période de visite */}
-          <div className="mt-12 text-center bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-8 border border-teal-100">
-            <Thermometer className="text-teal-500 mx-auto mb-4" size={32} />
+          <div className="mt-12 text-center bg-gradient-to-r from-orange-50 to-rose-50 rounded-xl p-8 border border-orange-100">
+            <Thermometer className="text-orange-500 mx-auto mb-4" size={32} />
             <h3 className="text-xl font-bold text-gray-800 mb-4">Meilleure Période de Visite</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="bg-white rounded-lg p-4 border border-teal-100">
+              <div className="bg-white rounded-lg p-4 border border-orange-100">
                 <div className="font-semibold text-green-600 mb-1">🌸 Printemps (Mars-Mai)</div>
                 <div className="text-gray-600">Température idéale 20-30°C</div>
               </div>
@@ -136,7 +136,7 @@ const DeadSeaIntroduction: React.FC = () => {
                 <div className="font-semibold text-orange-600 mb-1">☀️ Été (Juin-Août)</div>
                 <div className="text-gray-600">Très chaud 35-45°C</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-teal-100">
+              <div className="bg-white rounded-lg p-4 border border-rose-100">
                 <div className="font-semibold text-blue-600 mb-1">🍂 Automne (Sept-Nov)</div>
                 <div className="text-gray-600">Conditions parfaites 25-35°C</div>
               </div>

@@ -88,7 +88,7 @@ const DeadSeaSafetySection: React.FC = () => {
   }
 
   return (
-    <section id="dead-sea-safety" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section id="dead-sea-safety" className="py-20 bg-gradient-to-b from-neutral-light to-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* En-tête */}
@@ -151,8 +151,8 @@ const DeadSeaSafetySection: React.FC = () => {
                 return (
                   <div key={index} className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="p-3 bg-teal-100 rounded-full">
-                        <IconComponent className="text-teal-600" size={24} />
+                      <div className="p-3 bg-orange-100 rounded-full">
+                        <IconComponent className="text-orange-600" size={24} />
                       </div>
                       <h4 className="font-bold text-gray-800">{precaution.title}</h4>
                     </div>
@@ -164,7 +164,7 @@ const DeadSeaSafetySection: React.FC = () => {
                     <div className="space-y-2">
                       {precaution.tips.map((tip, tipIndex) => (
                         <div key={tipIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"></div>
                           <span className="text-gray-700 text-sm">{tip}</span>
                         </div>
                       ))}
@@ -183,13 +183,13 @@ const DeadSeaSafetySection: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">1</div>
+                <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">1</div>
                 <h4 className="font-semibold text-gray-800 mb-2">Préparation</h4>
                 <p className="text-gray-600 text-sm">Appliquez de la crème solaire, couvrez les plaies, hydratez-vous</p>
               </div>
               
               <div className="text-center">
-                <div className="w-12 h-12 bg-teal-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">2</div>
+                <div className="w-12 h-12 bg-rose-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">2</div>
                 <h4 className="font-semibold text-gray-800 mb-2">Entrée dans l'eau</h4>
                 <p className="text-gray-600 text-sm">Entrez lentement, allongez-vous doucement, laissez-vous flotter</p>
               </div>
@@ -201,7 +201,7 @@ const DeadSeaSafetySection: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">4</div>
+                <div className="w-12 h-12 bg-pink-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">4</div>
                 <h4 className="font-semibold text-gray-800 mb-2">Sortie et rinçage</h4>
                 <p className="text-gray-600 text-sm">Douche immédiate, séchage complet, hydratation de la peau</p>
               </div>

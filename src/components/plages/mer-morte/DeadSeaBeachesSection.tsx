@@ -55,7 +55,7 @@ const DeadSeaBeachesSection: React.FC = () => {
                 placeholder="Rechercher une plage..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -64,7 +64,7 @@ const DeadSeaBeachesSection: React.FC = () => {
           <div className="flex justify-center mb-8">
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
             >
               <SlidersHorizontal size={20} className="mr-2" />
               Filtres avancés
@@ -82,7 +82,7 @@ const DeadSeaBeachesSection: React.FC = () => {
                   <select
                     value={typeFilter}
                     onChange={(e) => setTypeFilter(e.target.value as BeachType | 'ALL')}
-                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500"
+                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"
                   >
                     <option value="ALL">Toutes</option>
                     <option value={BeachType.PUBLIC}>Publiques</option>
@@ -96,7 +96,7 @@ const DeadSeaBeachesSection: React.FC = () => {
                   <select
                     value={facilityFilter}
                     onChange={(e) => setFacilityFilter(e.target.value as BeachFacility | 'ALL')}
-                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500"
+                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"
                   >
                     {allFacilities.map(facility => (
                       <option key={facility} value={facility}>
@@ -114,7 +114,7 @@ const DeadSeaBeachesSection: React.FC = () => {
                       type="checkbox"
                       checked={wheelchairFilter}
                       onChange={(e) => setWheelchairFilter(e.target.checked)}
-                      className="mr-2 text-teal-500 focus:ring-teal-500"
+                      className="mr-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span className="text-sm text-gray-700">Accès handicapés</span>
                   </label>
@@ -153,7 +153,7 @@ const DeadSeaBeachesSection: React.FC = () => {
                   <p className="text-gray-500 text-lg mb-4">Aucune plage ne correspond à vos critères</p>
                   <button
                     onClick={resetFilters}
-                    className="px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors"
+                    className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
                   >
                     Réinitialiser les filtres
                   </button>

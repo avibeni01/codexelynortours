@@ -40,7 +40,7 @@ const DeadSeaHero: React.FC = () => {
             
             <a 
               href="#dead-sea-safety" 
-              className="px-8 py-3 bg-pink-600 text-white rounded-lg font-semibold hover:bg-pink-700 transition-colors duration-300 shadow-lg inline-flex items-center group"
+              className="px-8 py-3 bg-rose-500 text-white rounded-lg font-semibold hover:bg-rose-600 transition-colors duration-300 shadow-lg inline-flex items-center group"
             >
               <Shield className="mr-2 group-hover:animate-pulse" size={22} />
               Conseils de sécurité
@@ -50,15 +50,15 @@ const DeadSeaHero: React.FC = () => {
           {/* Stats rapides */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl font-bold text-cyan-300 mb-1">34%</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">34%</div>
               <div className="text-white text-sm">Taux de salinité</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl font-bold text-cyan-300 mb-1">10</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">10</div>
               <div className="text-white text-sm">Plages sélectionnées</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl font-bold text-cyan-300 mb-1">2000+</div>
+              <div className="text-2xl font-bold text-orange-500 mb-1">2000+</div>
               <div className="text-white text-sm">Ans d'histoire</div>
             </div>
           </div>

@@ -88,7 +88,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
         </div>
 
         {/* Badge de salinité */}
-        <div className="absolute top-2 right-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-3 py-1 rounded-md text-xs font-medium">
+        <div className="absolute top-2 right-2 bg-gradient-to-r from-orange-500 to-rose-500 text-white px-3 py-1 rounded-md text-xs font-medium">
           <Droplets className="inline mr-1" size={12} />
           {beach.salinity.level}
         </div>
@@ -117,7 +117,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
         <div className="space-y-3 mb-4">
           {/* Localisation */}
           <div className="flex items-start gap-3">
-            <MapPin className="text-teal-500 mt-1 flex-shrink-0" size={16} />
+            <MapPin className="text-orange-500 mt-1 flex-shrink-0" size={16} />
             <div>
               <p className="text-xs text-gray-500">Localisation</p>
               <p className="text-sm text-gray-700">{beach.location.address}</p>
@@ -126,7 +126,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
 
           {/* Horaires */}
           <div className="flex items-start gap-3">
-            <Clock className="text-blue-500 mt-1 flex-shrink-0" size={16} />
+            <Clock className="text-rose-500 mt-1 flex-shrink-0" size={16} />
             <div>
               <p className="text-xs text-gray-500">Horaires</p>
               <p className="text-sm text-gray-700">{beach.hours.opening} - {beach.hours.closing}</p>
@@ -138,7 +138,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
 
           {/* Prix */}
           <div className="flex items-start gap-3">
-            <DollarSign className="text-green-500 mt-1 flex-shrink-0" size={16} />
+            <DollarSign className="text-orange-500 mt-1 flex-shrink-0" size={16} />
             <div>
               <p className="text-xs text-gray-500">Tarifs</p>
               <p className="text-sm text-gray-700 font-medium">{beach.entranceFee}</p>
@@ -147,9 +147,9 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
         </div>
 
         {/* Propriétés thérapeutiques */}
-        <div className="bg-gradient-to-r from-cyan-50 to-teal-50 rounded-lg p-4 mb-4 border border-cyan-100">
+        <div className="bg-gradient-to-r from-orange-50 to-rose-50 rounded-lg p-4 mb-4 border border-orange-100">
           <div className="flex items-center gap-2 mb-2">
-            <Sparkles className="text-teal-500" size={16} />
+            <Sparkles className="text-orange-500" size={16} />
             <h4 className="font-semibold text-gray-800 text-sm">Propriétés thérapeutiques</h4>
           </div>
           <p className="text-xs text-gray-600 leading-relaxed">{beach.salinity.properties}</p>
@@ -178,7 +178,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
         {/* Bouton d'expansion */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full flex items-center justify-center gap-2 py-2 text-teal-600 hover:text-teal-700 font-medium text-sm transition-colors"
+          className="w-full flex items-center justify-center gap-2 py-2 text-orange-500 hover:text-orange-600 font-medium text-sm transition-colors"
         >
           {isExpanded ? 'Voir moins' : 'Voir plus de détails'}
           {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -193,7 +193,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
               <div className="grid grid-cols-2 gap-1">
                 {beach.facilities.map((facility, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm">
-                    <Check className="text-green-500" size={12} />
+                    <Check className="text-orange-500" size={12} />
                     <span className="text-gray-600">{facility}</span>
                   </div>
                 ))}
@@ -205,11 +205,11 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
               <h4 className="font-medium text-gray-800 mb-2 text-sm">Accessibilité</h4>
               <div className="space-y-2">
                 <div className="flex items-start gap-2 text-sm">
-                  <Car className="text-blue-500 mt-0.5" size={14} />
+                  <Car className="text-rose-500 mt-0.5" size={14} />
                   <span className="text-gray-600">{beach.accessibility.parking}</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm">
-                  <Bus className="text-green-500 mt-0.5" size={14} />
+                  <Bus className="text-orange-500 mt-0.5" size={14} />
                   <span className="text-gray-600">{beach.accessibility.publicTransport}</span>
                 </div>
               </div>
@@ -225,7 +225,7 @@ const DeadSeaBeachCard: React.FC<DeadSeaBeachCardProps> = ({ beach }) => {
             <div className="flex gap-2 pt-2">
               <button
                 onClick={handleGoogleMaps}
-                className="flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-sm"
+                className="flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm"
               >
                 <ExternalLink size={14} />
                 Voir sur la carte

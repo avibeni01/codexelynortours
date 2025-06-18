@@ -91,9 +91,9 @@ const DeadSeaTransportSection: React.FC = () => {
 
   const getColorClasses = (color: string) => {
     switch (color) {
-      case 'blue': return { bg: 'bg-blue-100', text: 'text-blue-600', border: 'border-blue-200' }
-      case 'green': return { bg: 'bg-green-100', text: 'text-green-600', border: 'border-green-200' }
-      case 'purple': return { bg: 'bg-purple-100', text: 'text-purple-600', border: 'border-purple-200' }
+      case 'blue': return { bg: 'bg-orange-100', text: 'text-orange-600', border: 'border-orange-200' }
+      case 'green': return { bg: 'bg-rose-100', text: 'text-rose-600', border: 'border-rose-200' }
+      case 'purple': return { bg: 'bg-pink-100', text: 'text-pink-600', border: 'border-pink-200' }
       default: return { bg: 'bg-gray-100', text: 'text-gray-600', border: 'border-gray-200' }
     }
   }
@@ -104,8 +104,8 @@ const DeadSeaTransportSection: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           {/* En-tête */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-              <Navigation className="text-blue-600" size={32} />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-4">
+              <Navigation className="text-orange-600" size={32} />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Comment se Rendre à la Mer Morte
@@ -197,8 +197,8 @@ const DeadSeaTransportSection: React.FC = () => {
                 const IconComponent = info.icon
                 return (
                   <div key={index} className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-teal-100 rounded-full mb-4">
-                      <IconComponent className="text-teal-600" size={24} />
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-orange-100 rounded-full mb-4">
+                      <IconComponent className="text-orange-600" size={24} />
                     </div>
                     <h4 className="font-bold text-gray-800 mb-3">{info.title}</h4>
                     <p className="text-gray-600 text-sm leading-relaxed">{info.content}</p>
@@ -230,7 +230,7 @@ const DeadSeaTransportSection: React.FC = () => {
                       <tr key={index} className="hover:bg-gray-50 transition-colors">
                         <td className="py-4 px-6">
                           <div className="flex items-center space-x-2">
-                            <MapPin className="text-teal-500" size={16} />
+                            <MapPin className="text-orange-500" size={16} />
                             <span className="font-medium text-gray-800">{parking.location}</span>
                           </div>
                         </td>
@@ -265,8 +265,8 @@ const DeadSeaTransportSection: React.FC = () => {
                 { city: "Eilat", distance: "200 km", time: "2h30", route: "Route 90 (direct)" }
               ].map((city, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 text-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <MapPin className="text-blue-600" size={20} />
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <MapPin className="text-orange-600" size={20} />
                   </div>
                   <h4 className="font-bold text-gray-800 mb-2">{city.city}</h4>
                   <div className="space-y-1 text-sm text-gray-600">
@@ -280,7 +280,7 @@ const DeadSeaTransportSection: React.FC = () => {
           </div>
 
           {/* Call to action pour location de voiture */}
-          <div className="bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-orange-500 to-rose-500 rounded-xl p-8 text-white text-center">
             <div className="max-w-3xl mx-auto">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
                 <Car className="text-white" size={32} />
@@ -288,7 +288,7 @@ const DeadSeaTransportSection: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4">
                 Besoin d'une Voiture de Location ?
               </h3>
-              <p className="text-blue-100 mb-6 text-lg">
+              <p className="text-orange-100 mb-6 text-lg">
                 Explorez la Mer Morte en toute liberté avec nos véhicules climatisés et nos tarifs avantageux.
                 Réservation facile et service client en français.
               </p>
@@ -296,22 +296,22 @@ const DeadSeaTransportSection: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="text-2xl font-bold mb-1">150+</div>
-                  <div className="text-blue-100 text-sm">Véhicules disponibles</div>
+                  <div className="text-orange-100 text-sm">Véhicules disponibles</div>
                 </div>
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="text-2xl font-bold mb-1">24/7</div>
-                  <div className="text-blue-100 text-sm">Support client</div>
+                  <div className="text-orange-100 text-sm">Support client</div>
                 </div>
                 <div className="bg-white/10 rounded-lg p-4">
                   <div className="text-2xl font-bold mb-1">-30%</div>
-                  <div className="text-blue-100 text-sm">Sur réservation anticipée</div>
+                  <div className="text-orange-100 text-sm">Sur réservation anticipée</div>
                 </div>
               </div>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link 
                   href="/location-voiture"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Voir nos véhicules
                   <ArrowRight size={20} className="ml-2" />
