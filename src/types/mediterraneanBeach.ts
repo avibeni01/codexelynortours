@@ -50,7 +50,45 @@ export enum BeachType {
   NATURE = "Nature",
   FAMILY = "Familiale",
   SPORTS = "Sports",
-  DOG_FRIENDLY = "Chiens autorisés"
+  DOG_FRIENDLY = "Chiens autorisés",
+  PUBLIC = "Publique",
+  RELIGIOUS = "Religieuse"
+}
+
+export interface MediterraneanReligiousBeach extends Omit<MediterraneanBeach, 'hours'> {
+  separationSchedule: {
+    men: string;
+    women: string;
+    notes: string;
+  };
+  dressCode: string;
+  specialFacilities: string[];
+  specialRules: string[];
+}
+
+export interface TransportOption {
+  type: string;
+  details: string;
+  price: string;
+  frequency: string;
+}
+
+export interface TransportationCity {
+  id: number;
+  toCity: string;
+  options: TransportOption[];
+}
+
+export interface SafetyTip {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface PracticalTip {
+  id: number;
+  title: string;
+  description: string;
 }
 
 export enum BeachFacility {
@@ -59,15 +97,24 @@ export enum BeachFacility {
   TOILETS = "Toilettes",
   PARKING = "Parking",
   RESTAURANT = "Restaurant",
+  RESTAURANTS = "Restaurants",
   LIFEGUARD = "Maître-nageur",
   SURF_RENTAL = "Location surf",
   VOLLEYBALL = "Volley-ball",
+  BEACH_VOLLEYBALL = "Volley-ball",
   WHEELCHAIR_ACCESS = "Accès handicapés",
   KIOSK = "Kiosque",
   UMBRELLAS = "Parasols",
+  PARASOLS = "Parasols",
   CHAIRS = "Chaises longues",
+  BEACH_CHAIRS = "Chaises longues",
   PLAYGROUND = "Aire de jeux",
-  PROMENADE = "Promenade"
+  PROMENADE = "Promenade",
+  FIRST_AID = "Premiers secours",
+  WIFI = "Wi-Fi",
+  BAR = "Bar",
+  WATER_SPORTS = "Sports nautiques",
+  MARINA = "Marina"
 }
 
 export enum WaveSize {
