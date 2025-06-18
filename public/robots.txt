@@ -1,6 +1,92 @@
+# Robots.txt optimisé pour Elynor Tours
+# https://elynortours.com/robots.txt
+
 User-agent: *
 Allow: /
+
+# Bloquer les dossiers système et API
 Disallow: /api/
 Disallow: /admin/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /temp/
+Disallow: /cache/
 
+# Bloquer les pages de test et développement
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+
+# Bloquer les pages de recherche avec paramètres
+Disallow: /*?search=*
+Disallow: /*?filter=*
+Disallow: /*?sort=*
+
+# Bloquer les pages de session et utilisateur
+Disallow: /user/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /account/
+
+# Autoriser spécifiquement les pages importantes
+Allow: /plages/
+Allow: /plages/mer-morte/
+Allow: /plages/mediterranee/
+Allow: /location-voiture/
+Allow: /hotels/
+Allow: /destinations/
+Allow: /guides/
+Allow: /contact/
+Allow: /faq/
+
+# Autoriser les fichiers statiques
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.webp
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+# Délai de crawling pour éviter la surcharge
+Crawl-delay: 1
+
+# Sitemaps
 Sitemap: https://elynortours.com/sitemap.xml
+Sitemap: https://elynortours.com/sitemap-images.xml
+
+# Configuration spécifique pour Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Configuration pour Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Configuration pour les bots sociaux
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Bloquer les mauvais bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
