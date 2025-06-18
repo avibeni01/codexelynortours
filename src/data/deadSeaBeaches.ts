@@ -7,9 +7,9 @@ export const deadSeaBeaches: DeadSeaBeach[] = [
     hebrewName: "חוף עין בוקק",
     description: "Ein Bokek est la plage publique la plus populaire de la Mer Morte, située au cœur de la zone hôtelière. Elle offre un accès gratuit et des installations modernes, ce qui en fait un choix idéal pour les familles et les visiteurs cherchant une expérience complète.",
     images: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/3c/20170701-134900-largejpg.jpg?w=1200&h=-1&s=1",
-      "https://deadsea.com/wp-content/uploads/2016/05/deadseapublic.jpg",
-      "https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/exodus-web/2020/03/EinBokek-DeadSea.jpg"
+      "https://lp-cms-production.imgix.net/2019-06/fb1e752e3718884abf0bf661805cb064-ein-bokek-beach.jpg",
+      "https://q-xx.bstatic.com/xdata/images/city/608x352/654793.webp?k=741e9d678cfed288d8b9404d4856c74c3a3d33fd0727277797dfe1ba885aea3c&o=",
+      "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/292000/292384-Ein-Bokek.jpg"
     ],
     location: {
       latitude: 31.2000,
@@ -133,9 +133,9 @@ export const deadSeaBeaches: DeadSeaBeach[] = [
     hebrewName: "חוף קליה",
     description: "Située à l'extrémité nord de la Mer Morte, Kalia Beach est l'une des plages les plus proches de Jérusalem. Elle offre une expérience complète avec des installations modernes et un accès facile aux eaux thérapeutiques.",
     images: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/96/a3/af/totes-meer-kalia-beach.jpg?h=500&s=1&w=900",
-      "https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/exodus-web/2020/03/Kalia-Beach.jpg",
-      "https://deadsea.com/wp-content/uploads/2016/05/kalia-beach-2.jpg"
+      "https://deadsea.com/wp-content/uploads/2016/05/-e1622978902351.jpg",
+      "https://www.worldbeachguide.com/photos/kalia-beach-dead-sea.jpg",
+      "https://www.deadsea.co.il/wp-content/uploads/2020/08/248-1.jpg"
     ],
     location: {
       latitude: 31.8333,
@@ -302,9 +302,10 @@ export const deadSeaBeaches: DeadSeaBeach[] = [
     hebrewName: "חמי זוהר",
     description: "Hamei Zohar est une plage publique offrant une expérience authentique de la Mer Morte. Elle est moins touristique que certaines autres plages et appréciée pour son ambiance locale et ses tarifs accessibles.",
     images: [
-      "https://deadsea.com/wp-content/uploads/2016/05/hamei-zohar-beach.jpg",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/7a/29/8c/hamei-zohar-beach.jpg?w=1200&h=-1&s=1",
-      "https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/exodus-web/2020/03/HameiZohar.jpg"
+      "https://deadsea.com/wp-content/uploads/2016/05/shutterstock_543680401-min-768x512.jpg",
+      "https://img2.oastatic.com/img2/45483938/max/variant.jpg",
+      "https://www.deadsea.co.il/wp-content/uploads/2020/07/WhatsApp_Image_2022-09-21_at_12.54.571.jpeg",
+      "https://zisi.co.il/wp-content/uploads/2019/08/shutterstock_1052596403.jpg"
     ],
     location: {
       latitude: 31.1500,
