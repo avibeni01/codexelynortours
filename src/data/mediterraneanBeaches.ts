@@ -688,9 +688,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף אכדיה",
     description: "Cette plage très populaire de Herzliya offre d'excellentes installations et un cadre magnifique. Sa proximité avec la marina lui confère une ambiance particulière, mélangeant simplicité balnéaire et sophistication nautique.",
     images: [
-      "/images/beaches/akadia-beach-1-new.jpg",
-      "/images/beaches/akadia-beach-2-new.jpg",
-      "/images/beaches/akadia-beach-3-new.jpg"
+      "/images/beaches/acadia-beach-1-new.jpg",
+      "/images/beaches/acadia-beach-2-new.jpg",
+      "/images/beaches/acadia-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.SPORTS],
     location: {
