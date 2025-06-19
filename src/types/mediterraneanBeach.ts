@@ -4,7 +4,7 @@ export interface MediterraneanBeach {
   name: string;
   hebrewName: string;
   description: string;
-  images: string[];
+  images: (string | { src: string })[];
   type: BeachType[];
   location: {
     city: string;

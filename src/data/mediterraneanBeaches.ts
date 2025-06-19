@@ -68,8 +68,8 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף פרישמן",
     description: "Plage urbaine animée au cœur de Tel Aviv, populaire auprès des locaux et des touristes.",
     images: [
-      "/src/assets/images/beaches/frishman-beach-1.jpg",
-      "/src/assets/images/beaches/frishman-beach-2.jpg"
+      "https://www.hafakot.co.il/wp-content/uploads/2022/06/%D7%9E%D7%A7%D7%95%D7%9E%D7%95%D7%AA-%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%99%D7%9D-%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2.webp",
+      "https://static.travelgay.com/media/27225/frishman-beach-tel-aviv.jpg"
     ],
     type: [BeachType.CITY, BeachType.SPORTS],
     location: {
@@ -127,9 +127,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף ירושלים",
     description: "Cette plage centrale offre une atmosphère décontractée et est très populaire auprès des jeunes locaux. Située entre les plages de Geula et de Frishman, Jerusalem Beach est connue pour son ambiance conviviale et sa facilité d'accès depuis le centre-ville.",
     images: [
-      "/src/assets/images/beaches/jerusalem-beach-1.jpg",
-      "/src/assets/images/beaches/jerusalem-beach-2.jpg",
-      "/src/assets/images/beaches/jerusalem-beach-3.jpg"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/cb/da/ba/tel-aviv-beach.jpg?h=-1&s=1&w=1200",
+      "https://project-tlv.info/wp-content/uploads/2022/01/20211225_100904.jpg",
+      "https://herzliya-marina-lagoon-apartment.co.il/wp-content/uploads/2019/04/jerusalem-beach-58634c0cd27fe.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY],
     location: {
@@ -189,9 +189,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הרצליה",
     description: "Les plages de Herzliya offrent un cadre plus paisible que celles de Tel Aviv tout en restant facilement accessibles. Avec leur sable fin et leurs eaux claires, elles sont particulièrement appréciées des familles et de ceux qui recherchent une atmosphère plus relaxante.",
     images: [
-      "/src/assets/images/beaches/herzliya-beach-1.jpg",
-      "/src/assets/images/beaches/herzliya-beach-2.jpg",
-      "/src/assets/images/beaches/herzliya-beach-3.jpg"
+      "https://www.herzliya.muni.il/uploads/n/1643809259.1547.jpg",
+      "https://images.pexels.com/photos/10559912/pexels-photo-10559912.jpeg",
+      "https://sharonline.co.il/wp-content/uploads/2022/04/acadia.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY],
     location: {
@@ -253,9 +253,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף בוגרשוב",
     description: "L'une des plages les plus centrales et populaires de Tel Aviv, réputée pour son atmosphère jeune et animée. C'est l'endroit idéal pour observer la culture de plage locale et profiter de la vie urbaine de Tel Aviv tout en se relaxant en bord de mer.",
     images: [
-      "/src/assets/images/beaches/bograshov-beach-1.jpg",
-      "/src/assets/images/beaches/bograshov-beach-2.jpg",
-      "/src/assets/images/beaches/bograshov-beach-3.jpg"
+      "https://medias.timeout.co.il/www/uploads/2021/08/shutterstock_1375449449-750x500.jpg",
+      "https://project-tlv.info/wp-content/uploads/2023/05/20230422_080727.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/78/3f/beautiful-sunset.jpg?h=500&s=1&w=900"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY],
     location: {
@@ -375,9 +375,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הבננה",
     description: "Populaire auprès des jeunes et des amateurs de sports nautiques, Banana Beach tire son nom d'un café qui s'y trouvait autrefois. C'est un lieu décontracté et convivial où l'on peut pratiquer le volleyball ou simplement profiter de l'atmosphère bohème.",
     images: [
-      "/src/assets/images/beaches/banana-beach-1.jpg",
-      "/src/assets/images/beaches/banana-beach-2.jpg",
-      "/src/assets/images/beaches/banana-beach-3.jpg"
+      "https://images.openai.com/thumbnails/52c47c833f49d74bbe0d7a06028caf24.jpeg",
+      "https://images.openai.com/thumbnails/bc546ecfa48d23d351e80b919576992f.jpeg",
+      "https://www.pnaygalil.co.il/wp-content/uploads/2022/08/%D7%91%D7%A0%D7%A0%D7%94-%D7%91%D7%99%D7%A5-%D7%90%D7%9B%D7%96%D7%99%D7%91.png"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY, BeachType.SPORTS],
     location: {
@@ -687,9 +687,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף אכדיה",
     description: "Cette plage très populaire de Herzliya offre d'excellentes installations et un cadre magnifique. Sa proximité avec la marina lui confère une ambiance particulière, mélangeant simplicité balnéaire et sophistication nautique.",
     images: [
-      "/src/assets/images/beaches/acadia-beach-1.jpg",
-      "/src/assets/images/beaches/acadia-beach-2.jpg",
-      "/src/assets/images/beaches/acadia-beach-3.jpg"
+      "https://images.openai.com/thumbnails/cc0ccc7f081d2a6800f59672afff22e9.jpeg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/99/96/ee/incredible-beach.jpg",
+      "https://baliletayel.co.il/wp-content/uploads/elementor/thumbs/-%D7%90%D7%9B%D7%93%D7%99%D7%94-%D7%A6%D7%A4%D7%95%D7%9F-%D7%91%D7%A9%D7%A7%D7%99%D7%A2%D7%94_800x600-qqrforgzoqovrhwf58gej18oindc1hrjtzz2qrbacg.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.SPORTS],
     location: {
@@ -1050,9 +1050,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף מציצים",
     description: "Populaire auprès des jeunes et des familles, cette plage est nommée d'après un film culte israélien des années 70. Elle offre une ambiance décontractée et de nombreuses activités.",
     images: [
-      "/src/assets/images/beaches/metzitzim-beach-1.jpg",
-      "/src/assets/images/beaches/metzitzim-beach-2.jpg",
-      "/src/assets/images/beaches/metzitzim-beach-3.jpg"
+      "/assets/images/beaches/metzitzim-beach-1.jpg",
+      "/assets/images/beaches/metzitzim-beach-2.jpg",
+      "/assets/images/beaches/metzitzim-beach-3.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.CITY],
     location: {
