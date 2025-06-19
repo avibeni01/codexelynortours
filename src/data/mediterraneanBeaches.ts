@@ -7,9 +7,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף גורדון",
     description: "L'une des plages les plus populaires de Tel Aviv, située en plein cœur de la ville. Gordon Beach offre un cadre animé avec de nombreuses installations et activités. C'est un endroit privilégié pour les locaux et les touristes, où l'ambiance de Tel Aviv se ressent pleinement.",
     images: [
-      "https://visit-tlv.co.il/wp-content/uploads/2021/07/%D7%97%D7%95%D7%A3-%D7%AA%D7%9C-%D7%91%D7%A8%D7%95%D7%9A-%D7%92%D7%99%D7%90-%D7%99%D7%97%D7%99%D7%90%D7%9C%D7%99.jpg",
-      "https://herzliya-marina-lagoon-apartment.co.il/wp-content/uploads/2019/04/dd9b612d27b0cabd92b170b07714f0b1.jpg",
-      "https://herzliya-marina-lagoon-apartment.co.il/wp-content/uploads/2019/04/810aacbfd58f216c3577013ec3aad384.jpg"
+      "/images/beaches/gordon-beach-1-new.jpg",
+      "/images/beaches/gordon-beach-2-new.jpg",
+      "/images/beaches/gordon-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY],
     location: {
@@ -68,8 +68,8 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף פרישמן",
     description: "Plage urbaine animée au cœur de Tel Aviv, populaire auprès des locaux et des touristes.",
     images: [
-      "https://www.hafakot.co.il/wp-content/uploads/2022/06/%D7%9E%D7%A7%D7%95%D7%9E%D7%95%D7%AA-%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%99%D7%9D-%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2.webp",
-      "https://static.travelgay.com/media/27225/frishman-beach-tel-aviv.jpg"
+      "/images/beaches/frishman-beach-1-new.jpg",
+      "/images/beaches/frishman-beach-2-new.jpg"
     ],
     type: [BeachType.CITY, BeachType.SPORTS],
     location: {
@@ -127,9 +127,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף ירושלים",
     description: "Cette plage centrale offre une atmosphère décontractée et est très populaire auprès des jeunes locaux. Située entre les plages de Geula et de Frishman, Jerusalem Beach est connue pour son ambiance conviviale et sa facilité d'accès depuis le centre-ville.",
     images: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/cb/da/ba/tel-aviv-beach.jpg?h=-1&s=1&w=1200",
-      "https://project-tlv.info/wp-content/uploads/2022/01/20211225_100904.jpg",
-      "https://herzliya-marina-lagoon-apartment.co.il/wp-content/uploads/2019/04/jerusalem-beach-58634c0cd27fe.jpg"
+      "/images/beaches/jerusalem-beach-1-new.jpg",
+      "/images/beaches/jerusalem-beach-2-new.jpg",
+      "/images/beaches/jerusalem-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY],
     location: {
@@ -189,9 +189,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הרצליה",
     description: "Les plages de Herzliya offrent un cadre plus paisible que celles de Tel Aviv tout en restant facilement accessibles. Avec leur sable fin et leurs eaux claires, elles sont particulièrement appréciées des familles et de ceux qui recherchent une atmosphère plus relaxante.",
     images: [
-      "https://www.herzliya.muni.il/uploads/n/1643809259.1547.jpg",
-      "https://images.pexels.com/photos/10559912/pexels-photo-10559912.jpeg",
-      "https://sharonline.co.il/wp-content/uploads/2022/04/acadia.jpg"
+      "/images/beaches/herzliya-beach-1-new.jpg",
+      "/images/beaches/herzliya-beach-2-new.jpg",
+      "/images/beaches/herzliya-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY],
     location: {
@@ -253,9 +253,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף בוגרשוב",
     description: "L'une des plages les plus centrales et populaires de Tel Aviv, réputée pour son atmosphère jeune et animée. C'est l'endroit idéal pour observer la culture de plage locale et profiter de la vie urbaine de Tel Aviv tout en se relaxant en bord de mer.",
     images: [
-      "https://medias.timeout.co.il/www/uploads/2021/08/shutterstock_1375449449-750x500.jpg",
-      "https://project-tlv.info/wp-content/uploads/2023/05/20230422_080727.jpg",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/78/3f/beautiful-sunset.jpg?h=500&s=1&w=900"
+      "/images/beaches/bograshov-beach-1-new.jpg",
+      "/images/beaches/bograshov-beach-2-new.jpg",
+      "/images/beaches/bograshov-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY],
     location: {
@@ -317,9 +317,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף פלמחים",
     description: "Cette magnifique plage naturelle est située dans une réserve et offre un environnement préservé, loin de l'agitation urbaine. Avec ses falaises impressionnantes et son atmosphère sauvage, Palmachim est l'endroit idéal pour ceux qui recherchent une connexion avec la nature.",
     images: [
-      "https://baliletayel.co.il/wp-content/uploads/2023/06/%D7%97%D7%95%D7%A3-%D7%A4%D7%9C%D7%9E%D7%97%D7%99%D7%9D.jpg",
-      "https://www.tiuli.com/image/f91aabecca38b8fcee320927e0ce75ff.jpg?height=0&width=1080",
-      "https://img.haarets.co.il/bs/00000182-19e7-db04-a39b-7bf797210000/08/2a/967751ab4cfbb501d777849b41bb/47815112.JPG?precrop=2990%2C2992%2Cx113%2Cy0"
+      "/images/beaches/palmachim-beach-1-new.jpg",
+      "/images/beaches/palmachim-beach-2-new.jpg",
+      "/images/beaches/palmachim-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.NATURE],
     location: {
@@ -375,9 +375,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הבננה",
     description: "Populaire auprès des jeunes et des amateurs de sports nautiques, Banana Beach tire son nom d'un café qui s'y trouvait autrefois. C'est un lieu décontracté et convivial où l'on peut pratiquer le volleyball ou simplement profiter de l'atmosphère bohème.",
     images: [
-      "https://images.openai.com/thumbnails/52c47c833f49d74bbe0d7a06028caf24.jpeg",
-      "https://images.openai.com/thumbnails/bc546ecfa48d23d351e80b919576992f.jpeg",
-      "https://www.pnaygalil.co.il/wp-content/uploads/2022/08/%D7%91%D7%A0%D7%A0%D7%94-%D7%91%D7%99%D7%A5-%D7%90%D7%9B%D7%96%D7%99%D7%91.png"
+      "/images/beaches/banana-beach-1-new.jpg",
+      "/images/beaches/banana-beach-2-new.jpg",
+      "/images/beaches/banana-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY, BeachType.SPORTS],
     location: {
@@ -438,9 +438,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הכרמל",
     description: "Cette longue plage située à Haïfa offre une vue spectaculaire sur le mont Carmel. Moins touristique que les plages de Tel Aviv, elle permet de découvrir un autre aspect du littoral israélien dans un cadre magnifique et plus local.",
     images: [
-      "https://smnh.tau.ac.il/wp-content/uploads/2024/07/%D7%97%D7%95%D7%A4%D7%99-%D7%9E%D7%95%D7%90%D7%96-%D7%9B%D7%A8%D7%9E%D7%9C-%D7%A6%D7%99%D7%9C%D7%95%D7%9D-%D7%90%D7%AA%D7%A8-%D7%94%D7%9E%D7%95%D7%A2%D7%A6%D7%94.jpg",
-      "https://www.haifa.muni.il/wp-content/uploads/2021/08/241196262_250617207066166_1926224737030928452_n.jpg",
-      "https://www.gov.il/BlobFolder/generalpage/hof_hacarmel/he/open_area_photos_Carmel0060.jpg"
+       "/images/beaches/hof-hacarmel-1-new.jpg",
+  "/images/beaches/hof-hacarmel-2-new.jpg",
+  "/images/beaches/hof-hacarmel-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY],
     location: {
@@ -500,9 +500,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף פארק לאומי אשקלון",
     description: "Située dans un parc national, cette plage combine beauté naturelle et richesse historique. Les ruines antiques à proximité ajoutent un intérêt culturel à cette magnifique étendue de sable, tandis que les infrastructures modernes assurent confort et sécurité aux visiteurs.",
     images: [
-      "https://static.parks.org.il/wp-content/uploads/2017/09/-e1531987122598.jpg",
-      "https://img1.oastatic.com/img2/45253262/max/variant.jpg",
-      "https://www.locate.co.il/Thumb/800/600/keepRatio/75/uploads/locations/1833203/335422_1581329386.jpg"
+      "/images/beaches/ashkelon-beach-1-new.jpg",
+  "/images/beaches/ashkelon-beach-2-new.jpg",
+  "/images/beaches/ashkelon-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.NATURE, BeachType.FAMILY],
     location: {
@@ -562,9 +562,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף בת ים",
     description: "Les plages de Bat Yam offrent une alternative plus calme à celles de Tel Aviv tout en étant facilement accessibles. Elles sont particulièrement appréciées des familles et des locaux. La promenade récemment rénovée ajoute au charme de ce littoral en plein développement.",
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/5/59/PikiWiki_Israel_1283_Bat_-_Yam_Beach_%D7%97%D7%95%D7%A3_%D7%91%D7%AA-%D7%99%D7%9D_%D7%9E%D7%91%D7%98_%D7%9E%D7%9C%D7%9E%D7%A2%D7%9C%D7%94.jpg",
-      "https://i.ytimg.com/vi/5CqaM217F9I/hq720.jpg?rs=AOn4CLB88qfMhraiiBVG4qFvGfLRzvfAZA&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD",
-      "https://www.bat-yam.muni.il/uploads/n/1721725297.7274.jpg"
+      "/images/beaches/bat-yam-beach-1-new.jpg",
+      "/images/beaches/bat-yam-beach-2-new.jpg",
+      "/images/beaches/bat-yam-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.CITY],
     location: {
@@ -624,9 +624,10 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף נתניה",
     description: "Les magnifiques plages de Netanya sont caractérisées par leurs impressionnantes falaises calcaires qui offrent des vues panoramiques sur la mer. La ville dispose de plusieurs plages bien aménagées sur plusieurs kilomètres, ce qui permet de trouver facilement un espace tranquille même en haute saison.",
     images: [
-      "https://www.netanya.muni.il/PublishingImages/%D7%97%D7%95%D7%A4%D7%99%D7%9D/%D7%A1%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%AA%20%D7%91/%D7%AA%D7%96%27/3.jpg",
+        "/images/beaches/netanya-beach-1-new.jpg",
       "https://www.netanya.muni.il/PublishingImages/%D7%97%D7%95%D7%A4%D7%99%D7%9D/%D7%91%D7%9C%D7%95%20%D7%91%D7%99%D7%99/%D7%AA%D7%96%27/2.jpg",
-      "https://www.netanya.muni.il/PublishingImages/%D7%97%D7%95%D7%A4%D7%99%D7%9D/%D7%A6%D7%90%D7%A0%D7%96/%D7%AA%D7%96/2.jpg"
+        "/images/beaches/netanya-beach-3-new.jpg",
+
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.SPORTS],
     location: {
@@ -687,9 +688,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף אכדיה",
     description: "Cette plage très populaire de Herzliya offre d'excellentes installations et un cadre magnifique. Sa proximité avec la marina lui confère une ambiance particulière, mélangeant simplicité balnéaire et sophistication nautique.",
     images: [
-      "https://images.openai.com/thumbnails/cc0ccc7f081d2a6800f59672afff22e9.jpeg",
-      "https://media-cdn.tripadvisor.com/media/photo-s/0a/99/96/ee/incredible-beach.jpg",
-      "https://baliletayel.co.il/wp-content/uploads/elementor/thumbs/-%D7%90%D7%9B%D7%93%D7%99%D7%94-%D7%A6%D7%A4%D7%95%D7%9F-%D7%91%D7%A9%D7%A7%D7%99%D7%A2%D7%94_800x600-qqrforgzoqovrhwf58gej18oindc1hrjtzz2qrbacg.jpg"
+      "/images/beaches/akadia-beach-1-new.jpg",
+      "/images/beaches/akadia-beach-2-new.jpg",
+      "/images/beaches/akadia-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.SPORTS],
     location: {
@@ -751,9 +752,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף דדו",
     description: "Située à Haïfa, Dado Beach est une plage bien aménagée offrant une vue splendide sur la baie de Haïfa. Elle est populaire tant auprès des familles que des jeunes et dispose d'excellentes installations.",
     images: [
-      "https://www.karamel.co.il/images/karamel.co.il/images/main/3216/%D7%97%D7%95%D7%A3_%D7%93%D7%93%D7%95-2023-09-06-16-38-4910_l.webp",
-      "https://www.tiuli.com/image/b3e2c6ad29cf562ea6c9c7e75ef5c817.jpg?height=0&width=1080",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/65/df/5c/dado-beach.jpg?h=500&s=1&w=900"
+      "/images/beaches/dado-beach-1-new.jpg",
+      "/images/beaches/dado-beach-2-new.jpg",
+      "/images/beaches/dado-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.CITY, BeachType.FAMILY],
     location: {
@@ -814,9 +815,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף עלמה",
     description: "Située entre Tel Aviv et Jaffa, cette plage moins connue offre une atmosphère plus décontractée et moins touristique. C'est un excellent endroit pour observer le coucher du soleil ou profiter de la mer loin des foules.",
     images: [
-      "/src/assets/images/beaches/alma-beach-1.jpg",
-      "/src/assets/images/beaches/alma-beach-2.jpg",
-      "/src/assets/images/beaches/alma-beach-3.jpg"
+      "/images/beaches/alma-beach-1.jpg",
+      "/images/beaches/alma-beach-2.jpg",
+      "/images/beaches/alma-beach-3.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.DOG_FRIENDLY],
     location: {
@@ -872,9 +873,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף אשדוד",
     description: "Les plages d'Ashdod offrent une expérience balnéaire plus authentique, moins touristique que Tel Aviv. La ville dispose de plusieurs plages bien équipées, réparties sur 7 km de côte, ce qui permet de trouver facilement un endroit tranquille.",
     images: [
-      "https://www.tiuli.com/image/6cef965426a17b472eb919645de41665.jpg?&width=1920&height=0",
-      "https://www.tiuli.com/image/ebc51fcf5610932ca396b8848a1f1831.jpg?&width=1920&height=0",
-      "https://www.tiuli.com/image/f1a2a737998024b8c0e09adacf760614.jpg?&width=1920&height=0"
+      "/images/beaches/ashdod-beach-1-new.jpg",
+      "/images/beaches/ashdod-beach-2-new.jpg",
+      "/images/beaches/ashdod-beach-3-new.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.CITY],
     location: {
@@ -934,9 +935,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף דור-הבונים",
     description: "Cette réserve naturelle offre des plages sauvages d'une beauté exceptionnelle. Avec ses criques isolées, ses formations rocheuses et ses vestiges archéologiques, c'est un paradis pour les amoureux de la nature et ceux qui cherchent à s'éloigner des plages urbaines.",
     images: [
-      "https://www.tiuli.com/image/5db7d9d24b28f691a97f1df2d8b07ce1.jpg?&width=1920&height=0",
-      "https://www.tiuli.com/image/0744429c0244ee813e62736c2e464e0c.jpg?&width=1920&height=0",
-      "https://www.tiuli.com/image/dd19d3180f47f560fdaabf8a2ac96af6.jpg?&width=1920&height=0"
+      "/images/beaches/dor-habonim-1-new.jpg",
+      "/images/beaches/dor-habonim-2-new.jpg",
+      "/images/beaches/dor-habonim-3-new.jpg"
     ],
     type: [BeachType.NATURE],
     location: {
@@ -990,8 +991,8 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף קיסריה",
     description: "Cette plage unique est située à côté des ruines de l'ancienne cité romaine de Césarée. Elle offre un cadre historique exceptionnel avec son port antique et ses vestiges archéologiques visibles même depuis l'eau.",
     images: [
-      "https://static.parks.org.il/wp-content/uploads/2023/11/%D7%A7%D7%99%D7%A1%D7%A8%D7%99%D7%94-%D7%A2%D7%99%D7%93%D7%9F-%D7%99%D7%A6%D7%97%D7%A7%D7%99%D7%90%D7%9F.jpeg",
-      "https://www.hayadan.org.il/images/content3/2021/11/Depositphotos_6658666_L.jpg"
+     "/images/beaches/caesarea-beach-1-new.jpg",
+     "/images/beaches/caesarea-beach-2-new.jpg",
     ],
     type: [BeachType.PUBLIC, BeachType.NATURE],
     location: {
@@ -1050,9 +1051,9 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף מציצים",
     description: "Populaire auprès des jeunes et des familles, cette plage est nommée d'après un film culte israélien des années 70. Elle offre une ambiance décontractée et de nombreuses activités.",
     images: [
-      "/assets/images/beaches/metzitzim-beach-1.jpg",
-      "/assets/images/beaches/metzitzim-beach-2.jpg",
-      "/assets/images/beaches/metzitzim-beach-3.jpg"
+      "/images/beaches/metzitzim-beach-1.jpg",
+      "/images/beaches/metzitzim-beach-2.jpg",
+      "/images/beaches/metzitzim-beach-3.jpg"
     ],
     type: [BeachType.PUBLIC, BeachType.FAMILY, BeachType.CITY],
     location: {
@@ -1112,9 +1113,8 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף הילטון",
     description: "Située près de l'hôtel Hilton, cette plage est divisée en trois sections distinctes : une zone pour les surfeurs, une plage gay-friendly (la principale d'Israël) et une section adaptée aux chiens.",
     images: [
-      "/src/assets/images/beaches/hilton-beach-1.jpg",
-      "/src/assets/images/beaches/hilton-beach-2.jpg",
-      "/src/assets/images/beaches/hilton-beach-3.jpg"
+      "/images/beaches/hilton-beach-1.jpg",
+      "/images/beaches/hilton-beach-2.jpg",
     ],
     type: [BeachType.PUBLIC, BeachType.SPORTS, BeachType.DOG_FRIENDLY],
     location: {
@@ -1173,9 +1173,8 @@ export const mediterraneanBeaches: MediterraneanBeach[] = [
     hebrewName: "חוף זיקים",
     description: "Cette plage relativement isolée offre un environnement naturel préservé, loin de l'agitation des plages urbaines. Elle est bordée par des dunes de sable et présente une flore unique.",
     images: [
-      "/src/assets/images/beaches/zikim-beach-1.jpg",
-      "/src/assets/images/beaches/zikim-beach-2.jpg",
-      "/src/assets/images/beaches/zikim-beach-3.jpg"
+      "/images/beaches/zikim-beach-1.jpg",
+      "/images/beaches/zikim-beach-2.jpg",
     ],
     type: [BeachType.PUBLIC, BeachType.NATURE],
     location: {
@@ -1233,9 +1232,9 @@ export const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
     hebrewName: "חוף נפרד נורדאו",
     description: "L'une des plages séparées les plus connues de Tel Aviv, située dans le quartier religieux au nord de la ville. Cette plage offre une séparation complète entre hommes et femmes, permettant aux visiteurs religieux de profiter de la Méditerranée tout en respectant leurs traditions.",
     images: [
-      "/src/assets/images/beaches/nordau-religious-1.jpg",
-      "/src/assets/images/beaches/nordau-religious-2.jpg",
-      "/src/assets/images/beaches/nordau-religious-3.jpg"
+      "/images/beaches/nordau-religious-1.jpg",
+      "/images/beaches/nordau-religious-2.jpg",
+      "/images/beaches/nordau-religious-3.jpg"
     ],
     type: [BeachType.RELIGIOUS],
     location: {
@@ -1307,9 +1306,9 @@ export const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
     hebrewName: "חוף הדתיים חיפה",
     description: "Située à Haïfa, cette plage séparée offre un environnement respectueux des traditions religieuses tout en permettant de profiter des eaux de la Méditerranée. Elle est particulièrement appréciée par les familles religieuses du nord d'Israël.",
     images: [
-      "/src/assets/images/beaches/hof-hadatim-1.jpg",
-      "/src/assets/images/beaches/hof-hadatim-2.jpg",
-      "/src/assets/images/beaches/hof-hadatim-3.jpg"
+      "/images/beaches/hof-hadatim-1.jpg",
+      "/images/beaches/hof-hadatim-2.jpg",
+      "/images/beaches/hof-hadatim-3.jpg"
     ],
     type: [BeachType.RELIGIOUS],
     location: {
