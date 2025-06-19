@@ -16,24 +16,26 @@ interface MediterraneanReligiousBeach {
   name: string;
   hebrewName: string;
   description: string;
-  detailedDescription: string;
+  detailedDescription?: string;
   location: {
     city: string;
     address: string;
-    coordinates: {
+    coordinates?: {
       latitude: number;
       longitude: number;
     };
+    latitude?: number;
+    longitude?: number;
   };
   images: string[];
   separationSchedule: ReligiousSchedule;
   specialFacilities: string[];
   specialRules: string[];
-  accessibility: {
+  accessibility?: {
     wheelchairAccess: boolean;
     familyFriendly: boolean;
   };
-  seasons: {
+  seasons?: {
     summer: boolean;
     winter: boolean;
   };
@@ -43,7 +45,7 @@ interface MediterraneanReligiousBeach {
   };
 }
 
-// Données des plages religieuses méditerranéennes
+// Données complètes des plages religieuses méditerranéennes
 const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
   {
     id: 1,
@@ -60,8 +62,8 @@ const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
       }
     },
     images: [
-      "https://images.pexels.com/photos/1024994/pexels-photo-1024994.jpeg",
-      "https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg"
+      "https://images.pexels.com/photos/4728606/pexels-photo-4728606.jpeg",
+      "https://images.pexels.com/photos/12628888/pexels-photo-12628888.jpeg"
     ],
     separationSchedule: {
       men: "Dimanche, Mardi, Jeudi : 6h00-13h00",
@@ -112,8 +114,8 @@ const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
       }
     },
     images: [
-      "https://images.pexels.com/photos/1024969/pexels-photo-1024969.jpeg",
-      "https://images.pexels.com/photos/1024968/pexels-photo-1024968.jpeg"
+      "https://studio-ma.co.il/wp-content/uploads/2019/05/SouthernPromenade_H-1390x626.jpg",
+      "https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg"
     ],
     separationSchedule: {
       men: "Dimanche, Mardi, Jeudi : 7h00-14h00",
@@ -163,8 +165,8 @@ const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
       }
     },
     images: [
-      "https://images.pexels.com/photos/1024967/pexels-photo-1024967.jpeg",
-      "https://images.pexels.com/photos/1024966/pexels-photo-1024966.jpeg"
+      "/images/beaches/netanya-beach-1-new.jpg",
+      "https://www.netanya.muni.il/PublishingImages/%D7%97%D7%95%D7%A4%D7%99%D7%9D/%D7%91%D7%9C%D7%95%20%D7%91%D7%99%D7%99/%D7%AA%D7%96%27/2.jpg"
     ],
     separationSchedule: {
       men: "Dimanche, Mardi, Jeudi, Samedi soir : 6h30-13h30",
@@ -214,8 +216,8 @@ const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
       }
     },
     images: [
-      "https://images.pexels.com/photos/1024965/pexels-photo-1024965.jpeg",
-      "https://images.pexels.com/photos/1024964/pexels-photo-1024964.jpeg"
+      "https://images.pexels.com/photos/10559912/pexels-photo-10559912.jpeg",
+      "https://images.pexels.com/photos/635359/pexels-photo-635359.jpeg"
     ],
     separationSchedule: {
       men: "Dimanche, Mardi, Jeudi : 7h00-15h00",
@@ -249,6 +251,138 @@ const mediterraneanReligiousBeaches: MediterraneanReligiousBeach[] = [
     contact: {
       phone: "+972-9-950-4444",
       website: "www.herzliya-beach.co.il"
+    }
+  },
+  {
+    id: 5,
+    name: "Plage Ashdod Séparée",
+    hebrewName: "חוף אשדוד מופרד",
+    description: "Plage séparée moderne d'Ashdod avec infrastructures récentes et environnement familial paisible.",
+    detailedDescription: "La plage séparée d'Ashdod est l'une des plus récentes installations de ce type sur la côte méditerranéenne. Elle offre des infrastructures modernes dans un cadre paisible, idéale pour les familles religieuses cherchant un environnement calme.",
+    location: {
+      city: "Ashdod",
+      address: "Promenade Marina, Ashdod",
+      coordinates: {
+        latitude: 31.8044,
+        longitude: 34.6553
+      }
+    },
+    images: [
+      "https://images.pexels.com/photos/31712449/pexels-photo-31712449.jpeg",
+      "https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg"
+    ],
+    separationSchedule: {
+      men: "Dimanche, Mardi, Jeudi : 6h30-14h30",
+      women: "Lundi, Mercredi, Vendredi : 6h30-14h30",
+      notes: "Nouveau complexe avec installations modernes. Ouvert toute l'année avec horaires ajustés en hiver.",
+      exceptions: ["Fermeture pour maintenance mensuelle", "Horaires prolongés pendant les vacances scolaires"]
+    },
+    specialFacilities: [
+      "Installations ultramodernes",
+      "Complexe aquatique pour enfants",
+      "Restaurant casher avec terrasse",
+      "Parking couvert gratuit",
+      "Wifi haut débit",
+      "Location équipement sportif",
+      "Espaces wellness"
+    ],
+    specialRules: [
+      "Inscription préalable recommandée",
+      "Zones d'activités organisées",
+      "Respect strict du silence",
+      "Code vestimentaire renforcé"
+    ],
+    accessibility: {
+      wheelchairAccess: true,
+      familyFriendly: true
+    },
+    seasons: {
+      summer: true,
+      winter: true
+    },
+    contact: {
+      phone: "+972-8-854-4444",
+      website: "www.ashdod-beaches.co.il"
+    }
+  },
+  {
+    id: 106,
+    name: "Bat Yam Separate Beach",
+    hebrewName: "חוף נפרד בת ים",
+    description: "La plage séparée de Bat Yam offre un environnement familial et respectueux des traditions religieuses. Facilement accessible depuis Tel Aviv, elle propose des installations adaptées et un espace bien organisé pour les visiteurs observants.",
+    location: {
+      city: "Bat Yam",
+      latitude: 32.0233,
+      longitude: 34.7361,
+      address: "Plage Nord, Bat Yam"
+    },
+    images: [
+      "https://studio-ma.co.il/wp-content/uploads/2019/05/SouthernPromenade_H-1390x626.jpg"
+    ],
+    separationSchedule: {
+      men: "Dimanche, Mardi, Jeudi: 07:00-13:00 / Lundi, Mercredi: 14:00-19:00 / Vendredi: 07:00-12:00",
+      women: "Dimanche, Mardi, Jeudi: 14:00-19:00 / Lundi, Mercredi: 07:00-13:00 / Vendredi: 12:00-16:00",
+      notes: "Fermé pendant Shabbat. Horaires spéciaux pendant les fêtes."
+    },
+    specialFacilities: [
+      "Zones complètement séparées",
+      "Vestiaires familiaux",
+      "Douches séparées",
+      "Espaces ombragés",
+      "Aires de repos"
+    ],
+    specialRules: [
+      "Respect des horaires de séparation",
+      "Environnement familial",
+      "Zones dédiées pour enfants"
+    ],
+    accessibility: {
+      wheelchairAccess: true,
+      familyFriendly: true
+    },
+    seasons: {
+      summer: true,
+      winter: false
+    }
+  },
+  {
+    id: 107,
+    name: "Hof HaMizrahi (Rishon LeZion)",
+    hebrewName: "חוף המזרחי ראשון לציון",
+    description: "Située à Rishon LeZion, cette plage séparée offre d'excellentes installations et une organisation exemplaire. Elle est particulièrement appréciée des familles religieuses qui recherchent un environnement adapté à leurs besoins.",
+    location: {
+      city: "Rishon LeZion",
+      latitude: 31.9765,
+      longitude: 34.7898,
+      address: "Plage Est, Rishon LeZion"
+    },
+    images: [
+      "https://www.srugim.co.il/i/wp-content/uploads/2024/06/F220814MG08-scaled__w1200h350q80.jpg"
+    ],
+    separationSchedule: {
+      men: "Dimanche, Mardi, Jeudi: 07:30-14:00 / Lundi, Mercredi: 15:00-19:00 / Vendredi: 07:30-13:00",
+      women: "Dimanche, Mardi, Jeudi: 15:00-19:00 / Lundi, Mercredi: 07:30-14:00 / Vendredi: 13:00-16:00",
+      notes: "Fermé pendant Shabbat et jours fériés religieux."
+    },
+    specialFacilities: [
+      "Barrières complètes entre sections",
+      "Vestiaires adaptés",
+      "Zones ombragées",
+      "Aire de jeux pour enfants",
+      "Kiosque avec produits cachères"
+    ],
+    specialRules: [
+      "Horaires stricts à respecter",
+      "Zones familiales disponibles",
+      "Activités pour enfants organisées en été"
+    ],
+    accessibility: {
+      wheelchairAccess: true,
+      familyFriendly: true
+    },
+    seasons: {
+      summer: true,
+      winter: false
     }
   }
 ];
@@ -325,7 +459,7 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
         </div>
         
         {/* Beach Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredBeaches.map((beach) => (
             <div 
               key={beach.id} 
@@ -341,7 +475,7 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
                 <div className="absolute top-0 left-0 bg-rose-600 text-white px-3 py-1 m-3 rounded-md text-xs font-medium">
                   {beach.location.city}
                 </div>
-                {beach.accessibility.wheelchairAccess && (
+                {beach.accessibility?.wheelchairAccess && (
                   <div className="absolute top-0 right-0 bg-green-600 text-white px-2 py-1 m-3 rounded-md text-xs">
                     Accessible
                   </div>
@@ -363,8 +497,10 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
                     <Calendar className="w-5 h-5 text-rose-500 mt-0.5 mr-2 flex-shrink-0" />
                     <div>
                       <h4 className="text-sm font-semibold text-gray-700 mb-1">Horaires de séparation:</h4>
-                      <p className="text-xs text-gray-600"><strong>Hommes:</strong> {beach.separationSchedule.men}</p>
-                      <p className="text-xs text-gray-600"><strong>Femmes:</strong> {beach.separationSchedule.women}</p>
+                      <p className="text-xs text-blue-700 font-medium">Hommes:</p>
+                      <p className="text-xs text-gray-600 mb-1 line-clamp-1">{beach.separationSchedule.men}</p>
+                      <p className="text-xs text-pink-600 font-medium">Femmes:</p>
+                      <p className="text-xs text-gray-600 line-clamp-1">{beach.separationSchedule.women}</p>
                     </div>
                   </div>
                   
@@ -376,16 +512,20 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-xs text-gray-500">
-                      <Users className="w-4 h-4 mr-1" />
-                      {beach.accessibility.familyFriendly ? 'Familles bienvenues' : 'Adultes uniquement'}
+                  {beach.accessibility && (
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center text-xs text-gray-500">
+                        <Users className="w-4 h-4 mr-1" />
+                        {beach.accessibility.familyFriendly ? 'Familles bienvenues' : 'Adultes uniquement'}
+                      </div>
+                      {beach.seasons && (
+                        <div className="flex items-center text-xs text-gray-500">
+                          <Clock className="w-4 h-4 mr-1" />
+                          {beach.seasons.winter ? 'Toute année' : 'Été seulement'}
+                        </div>
+                      )}
                     </div>
-                    <div className="flex items-center text-xs text-gray-500">
-                      <Clock className="w-4 h-4 mr-1" />
-                      {beach.seasons.winter ? 'Toute année' : 'Été seulement'}
-                    </div>
-                  </div>
+                  )}
                 </div>
                 
                 {/* Expand Button */}
@@ -410,7 +550,7 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
                   <div className="mt-4 pt-4 border-t border-gray-100 space-y-4">
                     <div>
                       <h4 className="text-sm font-semibold text-gray-700 mb-2">Description complète:</h4>
-                      <p className="text-sm text-gray-600">{beach.detailedDescription}</p>
+                      <p className="text-sm text-gray-600">{beach.detailedDescription || beach.description}</p>
                     </div>
                     
                     <div>
@@ -466,7 +606,7 @@ const MediterraneanReligiousBeachesSection: React.FC = () => {
                     
                     {/* Map Button */}
                     <a 
-                      href={`https://www.google.com/maps/search/?api=1&query=${beach.location.coordinates.latitude},${beach.location.coordinates.longitude}`}
+                      href={`https://www.google.com/maps/search/?api=1&query=${beach.location.coordinates?.latitude || beach.location.latitude},${beach.location.coordinates?.longitude || beach.location.longitude}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full bg-orange-500 text-white text-center py-2 rounded-md hover:bg-orange-600 transition-colors mt-4"
