@@ -65,61 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section Valeurs */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Cherchez, comparez, économisez
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-rose-600 text-white p-8 rounded-lg text-center">
-              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Shield size={48} />
-              </div>
-              <h3 className="text-xl font-bold">Confidentialité</h3>
-            </div>
-            
-            <div className="bg-pink-500 text-white p-8 rounded-lg text-center">
-              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Users size={48} />
-              </div>
-              <h3 className="text-xl font-bold">Sérénité</h3>
-            </div>
-            
-            <div className="bg-pink-500 text-white p-8 rounded-lg text-center">
-              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Star size={48} />
-              </div>
-              <h3 className="text-xl font-bold">Sur mesure</h3>
-            </div>
-            
-            <div className="bg-pink-500 text-white p-8 rounded-lg text-center">
-              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Clock size={48} />
-              </div>
-              <h3 className="text-xl font-bold">International</h3>
-            </div>
-          </div>
-          
-          {/* CTA Box */}
-          <div className="mt-12 bg-orange-500 text-white p-8 rounded-lg flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold mb-2">Profitez de votre voyage</h3>
-              <p className="text-lg">
-                On s'occupe de négocier pour vous les meilleures offres de location voiture et réservation d'hôtels
-              </p>
-            </div>
-            <Link 
-              href="/contact" 
-              className="border-2 border-white text-white font-bold py-3 px-6 rounded hover:bg-white hover:text-orange-500 transition-colors whitespace-nowrap"
-            >
-              PRENDRE CONTACT
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Section Services */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -308,6 +253,70 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Section Valeurs */}
+      <div className="container mx-auto py-10">
+        <h2 className="text-3xl font-bold text-center mb-10">Cherchez, comparez, économisez</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Colonne de gauche: Valeurs d'entreprise */}
+          <div className="col-span-1 md:col-span-2">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-rose-500 text-white p-8 flex flex-col items-center justify-center text-center">
+                <div className="w-14 h-14 mb-4 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" strokeWidth="1.5" fill="none">
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <path d="M9 8h6M9 12h6M9 16h4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Confidentialité</h3>
+              </div>
+              
+              <div className="bg-rose-400 text-white p-8 flex flex-col items-center justify-center text-center">
+                <div className="w-14 h-14 mb-4 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" strokeWidth="1.5" fill="none">
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z" />
+                    <rect x="8" y="21" width="8" height="2" rx="1" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Sérénité</h3>
+              </div>
+              
+              <div className="bg-rose-400 text-white p-8 flex flex-col items-center justify-center text-center">
+                <div className="w-14 h-14 mb-4 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" strokeWidth="1.5" fill="none">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Sur mesure</h3>
+              </div>
+              
+              <div className="bg-rose-400 text-white p-8 flex flex-col items-center justify-center text-center">
+                <div className="w-14 h-14 mb-4 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" strokeWidth="1.5" fill="none">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">International</h3>
+              </div>
+            </div>
+          </div>
+          
+          {/* Colonne de droite: Texte de présentation */}
+          <div className="bg-orange-500 text-white p-8 flex flex-col justify-center">
+            <h3 className="text-3xl font-bold mb-4">Profitez de votre voyage</h3>
+            <p className="mb-6">On s'occupe de négocier pour vous les meilleurs offres de location voiture et réservation d'Hôtels</p>
+            <a 
+              href="mailto:contact@elynortours.com" 
+              className="border-2 border-white text-white font-bold py-2 px-6 inline-block w-fit text-center hover:bg-white hover:text-orange-500 transition-colors"
+            >
+              PRENDRE CONTACT
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Section CTA finale */}
       <section className="py-16 bg-gradient-to-r from-orange-500 to-rose-500 text-white">

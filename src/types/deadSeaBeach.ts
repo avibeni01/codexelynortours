@@ -66,6 +66,8 @@ export interface ReligiousBeach {
     notes?: string
   }
   dressCode: string
+  specialFacilities: string[]
+  specialRules: string[]
   facilities: BeachFacility[]
   entranceFee: string
   accessibility: {

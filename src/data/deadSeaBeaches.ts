@@ -424,9 +424,9 @@ export const deadSeaBeaches: DeadSeaBeach[] = [
 export const religiousBeaches: ReligiousBeach[] = [
   {
     id: 101,
-    name: "Plage Séparée Ein Bokek",
-    hebrewName: "חוף נפרד עין בוקק",
-    description: "Section spéciale d'Ein Bokek avec horaires séparés pour hommes et femmes",
+    name: "Separate Beach (Ein Bokek)",
+    hebrewName: "חוף נפרד (עין בוקק)",
+    description: "Cette section séparée de la plage d'Ein Bokek est spécialement conçue pour les visiteurs religieux, offrant des jours et horaires distincts pour les hommes et les femmes.",
     images: [
       "https://www.deadsea.co.il/wp-content/uploads/2020/07/WhatsApp_Image_2022-09-21_at_12.54.57_11.jpeg",
       "https://www.locate.co.il/Thumb/800/600/keepRatio/75/uploads/locations/1833127/492419_1571503462.jpg",
@@ -438,11 +438,22 @@ export const religiousBeaches: ReligiousBeach[] = [
       address: "Section plage séparée, Ein Bokek, Route 90, Israël"
     },
     separationSchedule: {
-      men: "Dimanche, Mardi, Jeudi: 8h-16h",
-      women: "Lundi, Mercredi, Vendredi: 8h-16h",
-      notes: "Samedi: 16h-19h (mixte)"
+      men: "Dimanche, Mardi, Jeudi: 09:00-13:00",
+      women: "Dimanche, Mardi, Jeudi: 14:00-18:00 / Lundi, Mercredi: 09:00-18:00",
+      notes: "Vendredi: alternance selon la saison, consultez le calendrier local"
     },
-    dressCode: "Respectez les horaires et le code vestimentaire approprié",
+    dressCode: "Maillot de bain modeste requis. Pour les femmes: maillots couvrant les épaules et jusqu'aux genoux. Pour les hommes: shorts de bain jusqu'aux genoux.",
+    specialFacilities: [
+      "Zones d'ombre séparées",
+      "Vestiaires privés",
+      "Personnel uniquement féminin pendant les heures réservées aux femmes",
+      "Personnel uniquement masculin pendant les heures réservées aux hommes"
+    ],
+    specialRules: [
+      "Pas de photographie pendant les heures séparées",
+      "Pas d'appareils électroniques dans certaines zones",
+      "Respect obligatoire des horaires de séparation"
+    ],
     facilities: [
       BeachFacility.CHANGING_ROOMS,
       BeachFacility.SHOWERS,
@@ -459,35 +470,98 @@ export const religiousBeaches: ReligiousBeach[] = [
   },
   {
     id: 102,
-    name: "Plage Religieuse Hamei Zohar",
-    hebrewName: "חוף דתי חמי זוהר",
-    description: "Section dédiée aux familles religieuses avec infrastructure adaptée",
+    name: "Separate Beach (Neve Midbar)",
+    hebrewName: "חוף נפרד (נווה מדבר)",
+    description: "La plage séparée de Neve Midbar propose des installations spécifiquement conçues pour les visiteurs religieux, avec une stricte séparation entre hommes et femmes à des jours désignés.",
     images: [
-      "https://www.deadsea.co.il/wp-content/uploads/2020/07/WhatsApp_Image_2022-09-21_at_12.54.57_11.jpeg",
-      "https://www.locate.co.il/Thumb/800/600/keepRatio/75/uploads/locations/1833127/492419_1571503462.jpg"
+      "https://www.tiuli.com/image/d829ff73b44ba62279db41a03f8a76ee.jpg?height=0&width=1080",
+      "https://www.deadsea.co.il/wp-content/uploads/2020/10/9b282377-58a4-4ea2-9f8c-5c3bf5cda1e5.jpg",
+      "https://www.dead-sea.org.il/media/2024/11/4087ab6186b4e8a093e770a2a2d0c142.jpg"
     ],
     location: {
-      latitude: 31.1500,
-      longitude: 35.3500,
-      address: "Hamei Zohar, côté sud, Route 90, Israël"
+      latitude: 31.7123,
+      longitude: 35.4562,
+      address: "Section plage séparée, Neve Midbar, Route 90, Israël"
     },
     separationSchedule: {
-      men: "Dimanche, Mardi, Jeudi: 9h-15h",
-      women: "Lundi, Mercredi, Vendredi: 9h-15h",
-      notes: "Samedi après-midi (selon saison)"
+      men: "Dimanche, Mercredi: 09:00-18:00 / Vendredi: 09:00-14:00",
+      women: "Lundi, Jeudi: 09:00-18:00 / Mardi: 09:00-18:00",
+      notes: "Fermé pendant Shabbat et certaines fêtes religieuses"
     },
-    dressCode: "Entrée gratuite, donations appréciées",
+    dressCode: "Tenue modeste obligatoire. Les femmes doivent porter des maillots couvrant les épaules, les bras jusqu'aux coudes et les jambes jusqu'aux genoux. Les hommes doivent porter des shorts de bain jusqu'aux genoux.",
+    specialFacilities: [
+      "Barrières visuelles élevées entre les sections",
+      "Entrées séparées pour hommes et femmes",
+      "Personnel exclusivement du même sexe que les visiteurs selon l'horaire",
+      "Aires de prière désignées"
+    ],
+    specialRules: [
+      "Interdiction stricte de traverser vers la section du sexe opposé",
+      "Pas de musique forte",
+      "Pas d'alcool",
+      "Codes vestimentaires stricts même dans les zones de douche"
+    ],
     facilities: [
       BeachFacility.CHANGING_ROOMS,
       BeachFacility.SHOWERS,
-      BeachFacility.RESTAURANTS
+      BeachFacility.LIFEGUARD,
+      BeachFacility.RESTAURANTS,
+      BeachFacility.FIRST_AID
     ],
-    entranceFee: "Gratuit (donations acceptées)",
+    entranceFee: "70 NIS pour les adultes, 40 NIS pour les enfants",
     accessibility: {
-      wheelchairAccess: false,
-      parking: "Parking disponible",
-      publicTransport: "Accès limité"
+      wheelchairAccess: true,
+      parking: "Parking gratuit pour les visiteurs",
+      publicTransport: "Bus disponibles depuis Jérusalem"
     },
-    type: BeachType.PUBLIC
+    type: BeachType.PRIVATE
+  },
+  {
+    id: 103,
+    name: "Separate Beach (Kalia)",
+    hebrewName: "חוף נפרד (קליה)",
+    description: "La section séparée de la plage de Kalia offre une expérience respectueuse des traditions religieuses, avec des installations adaptées et un environnement préservant l'intimité.",
+    images: [
+      "https://www.deadsea.co.il/wp-content/uploads/2020/07/WhatsApp_Image_2022-09-21_at_12.54.57_11.jpeg",
+      "https://www.locate.co.il/Thumb/800/600/keepRatio/75/uploads/locations/1833127/492419_1571503462.jpg",
+      "https://www.now14.co.il/wp-content/uploads/2023/05/a8c73291-49b5-4d40-9f31-8fc189e8e69c.jpg"
+    ],
+    location: {
+      latitude: 31.7696,
+      longitude: 35.4615,
+      address: "Section plage séparée, Kalia Beach, Route 90, Israël"
+    },
+    separationSchedule: {
+      men: "Dimanche, Mardi, Jeudi: 09:00-13:00",
+      women: "Dimanche, Mardi, Jeudi: 14:00-18:00 / Lundi, Mercredi: 09:00-18:00",
+      notes: "Alternance spéciale pendant les fêtes religieuses, consultez le calendrier"
+    },
+    dressCode: "Tenue modeste obligatoire conformément aux exigences religieuses. Couverture complète recommandée en dehors des zones de baignade.",
+    specialFacilities: [
+      "Zones complètement séparées visuellement",
+      "Casiers et vestiaires privés",
+      "Espaces familiaux disponibles certains jours (consultez le calendrier)",
+      "Personnel adapté selon les horaires hommes/femmes"
+    ],
+    specialRules: [
+      "Respect strict des horaires de séparation",
+      "Environnement calme et respectueux",
+      "Restrictions alimentaires dans certaines zones (nourriture cachère uniquement)",
+      "Observation du Shabbat dans toutes les installations"
+    ],
+    facilities: [
+      BeachFacility.CHANGING_ROOMS,
+      BeachFacility.SHOWERS,
+      BeachFacility.LIFEGUARD,
+      BeachFacility.RESTAURANTS,
+      BeachFacility.FIRST_AID
+    ],
+    entranceFee: "60 NIS pour les adultes, 35 NIS pour les enfants",
+    accessibility: {
+      wheelchairAccess: true,
+      parking: "Parking gratuit avec places réservées",
+      publicTransport: "Bus direct depuis Jérusalem"
+    },
+    type: BeachType.PRIVATE
   }
 ]
